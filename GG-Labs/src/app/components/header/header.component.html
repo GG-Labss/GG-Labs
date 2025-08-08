@@ -1,3 +1,49 @@
-<p>
-  header works!
-</p>
+<!--* HEADER *-->
+<ion-header>
+
+  <ion-toolbar>
+
+    <ion-title>
+      <!-- Link na Logo, para voltar ao inicio -->
+      <a routerLink = "/home">
+        <img src="../../../assets/logo_gg.png" alt="" id="header-logo" />
+      </a>
+    </ion-title>
+
+    <ion-buttons slot = "end">
+
+      <!--? Inicio ?-->
+      <ion-button routerLink = "/home" routerLinkActive = "active" [routerLinkActiveOptions] = "{exact: true}" class = "nav-button" >
+        Início
+      </ion-button>
+      <!--? Inicio ?-->
+
+      <!--? Sobre ?-->
+      <ion-button routerLink = "/about" routerLinkActive = "active" [routerLinkActiveOptions] = "{exact: true}" class = "nav-button">
+        Sobre
+      </ion-button>
+      <!--? Sobre ?-->
+
+      <!--? Serviços ?-->
+      <ion-button routerLink = "/services" routerLinkActive = "active" [routerLinkActiveOptions] = "{exact: true}" class = "nav-button">
+        Serviços
+      </ion-button>
+      <!--? Serviços ?-->
+
+      <!--? Portfólio ?-->
+      <ion-button routerLink = "/portfolio" routerLinkActive = "active" [routerLinkActiveOptions] = "{exact: true}" class = "nav-button">
+        Portfólio
+      </ion-button>
+      <!--? Portfólio ?-->
+
+      <!--? Contato ?-->
+      <ion-button routerLink = "/contact" routerLinkActive = "active" [routerLinkActiveOptions] = "{exact: true}" class="nav-button">
+        Contato
+      </ion-button>
+      <!--? Contato ?-->
+
+    </ion-buttons>
+
+  </ion-toolbar>
+
+</ion-header>
