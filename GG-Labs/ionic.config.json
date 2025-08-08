@@ -1,0 +1,7 @@
+{
+  "name": "GG-Labs",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
