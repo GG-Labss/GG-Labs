@@ -1,96 +1,121 @@
-/* Estilo geral do footer */
-ion-footer {
-	background: linear-gradient(90deg, #232526 0%, #414345 100%); 
-	color: #fff; 
-	box-shadow: 0 -2px 8px rgba(0,0,0,0.08); 
+/* Footer Styles */
+
+// Container principal do footer, organiza os elementos em linha
+
+
+.footerzada {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 0;
+  background: #FEF8EF; // Cor de fundo escura
+  color: #222;      // Texto branco
 }
 
-.footerzada{
-	display: flex; 
-	flex-direction: row;
-	justify-content: space-between; // Espaço entre título e canais
-	width: 100%;
+.footer-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 32px; // Espaço à esquerda
 }
 
-// Barra de ferramentas do footer
-ion-toolbar {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	padding: 24px 0 16px 0;
-	background: transparent;
+.footer-channels {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-right: 32px; // Espaço à direita
 }
 
-// Título do footer (lado esquerdo)
-ion-title {
-	text-align: left;
-	margin-bottom: 12px;
+
+.footer-info h2 {
+  margin: 0;
+  font-size: 1.2rem; 
+  font-weight: 700;
+  letter-spacing: 1px;
 }
 
-ion-title h2 {
-	font-size: 1.2rem; // Tamanho do nome GG Labs
-	font-weight: 700;
-	margin: 0;
-	letter-spacing: 2px;
+.footer-info p {
+  margin: 4px 0 10px 0;
+  font-size: 0.85rem; // Subtítulo discreto
+  color: #4d4d4d;
 }
 
-ion-title p {
-	font-size: 0.8rem; // Slogan
-	font-weight: 400;
-	margin: 4px 0 0 0;
-	color: #bdbdbd;
+.footer-copyright {
+  font-size: 0.75rem; // Copyright pequeno
+  color: #888;
+  margin-top: 2px;
 }
 
-// Área dos canais (lado direito)
-ion-buttons {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	gap: 16px;
-	margin-top: 8px;
-	justify-content: flex-end; // Alinha à direita
-	width: auto;
+
+.footer-channels ion-buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 16px; // Espaço entre botões
+  margin-top: 12px;
+  align-items: center;
 }
 
-ion-buttons h3 {
-	font-size: 1rem; // Título dos canais
-	font-weight: 600;
-	margin-right: 12px;
-	color: rgb(41, 85, 185);
-	letter-spacing: 1px;
+.footer-channels h3 {
+  margin: 0 12px 0 0;
+  font-size: 0.85rem; // Título dos canais
+  font-weight: 500;
+  color: #222;
 }
 
-ion-button {
-	--background: #232526; // Cor de fundo dos botões
-	--color: #fff; // Cor do texto dos botões
-	border-radius: 24px; // Bordas arredondadas
-	box-shadow: 0 2px 8px rgba(0,0,0,0.10); // Sombra dos botões
-	font-size: 0.8rem;
-	font-weight: 500;
-	transition: background 0.2s, transform 0.2s;
-	padding: 0 16px;
+.footer-channels .linkedin {
+  background: #fff;
+  color: #222;
+}
+.footer-channels .github {
+  background: #fff;
+  color: #222;
+}
+.footer-channels .instagram {
+  background: #fff;
+  color: #222;
+}
+.footer-channels ion-button {
+  border-radius: 6px; // Botões arredondados
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: background 0.2s, color 0.2s;
 }
 
-// Efeito hover nos botões
-ion-button:hover {
-	transform: translateY(-2px) scale(1.05);
+// Ícones pretos por padrão
+.footer-channels ion-icon {
+  color: #111;
+  transition: color 0.2s;
 }
 
-// Cores dos ícones dos canais ao passar o mouse
-.linkedin:hover{
-	--color: rgb(41, 85, 185);
+// Destaque das cores oficiais ao passar o mouse
+.footer-channels .linkedin:hover {
+  background: #0077b5;
+  color: #fff;
 }
-.github:hover{
-	--color: #171515;
+.footer-channels .linkedin:hover ion-icon {
+  color: #fff;
 }
-.instagram:hover{
-	--color: #bc2a8d;
+.footer-channels .github:hover {
+  background: #333;
+  color: #fff;
+}
+.footer-channels .github:hover ion-icon {
+  color: #fff;
+}
+.footer-channels .instagram:hover {
+  background: linear-gradient(45deg, #fd1d1d, #833ab4);
+  color: #fff;
+}
+.footer-channels .instagram:hover ion-icon {
+  color: #fff;
+}
+.footer-channels ion-button:hover {
+  filter: brightness(1.1); // Destaque ao passar o mouse
 }
 
-// Ícones dos canais
-ion-icon {
-	font-size: 1.1rem;
-	vertical-align: middle;
-	margin-right: 4px;
-}
 
+
+.footerzada ion-button:hover {
+  filter: brightness(1.1); // Destaque ao passar o mouse
+}
