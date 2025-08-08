@@ -1,15 +1,18 @@
 /* Estilo geral do footer */
 ion-footer {
-	background: linear-gradient(90deg, #232526 0%, #414345 100%);
-	color: #fff;
-	box-shadow: 0 -2px 8px rgba(0,0,0,0.08);
+	background: linear-gradient(90deg, #232526 0%, #414345 100%); 
+	color: #fff; 
+	box-shadow: 0 -2px 8px rgba(0,0,0,0.08); 
 }
 
 .footerzada{
-  display: flex;
-  flex-direction: row;
+	display: flex; 
+	flex-direction: row;
+	justify-content: space-between; // Espaço entre título e canais
+	width: 100%;
 }
 
+// Barra de ferramentas do footer
 ion-toolbar {
 	display: flex;
 	flex-direction: column;
@@ -18,36 +21,39 @@ ion-toolbar {
 	background: transparent;
 }
 
+// Título do footer (lado esquerdo)
 ion-title {
-	text-align: center;
+	text-align: left;
 	margin-bottom: 12px;
 }
 
 ion-title h2 {
-	font-size: 2rem;
+	font-size: 1.2rem; // Tamanho do nome GG Labs
 	font-weight: 700;
 	margin: 0;
 	letter-spacing: 2px;
 }
 
 ion-title p {
-	font-size: 1rem;
+	font-size: 0.8rem; // Slogan
 	font-weight: 400;
 	margin: 4px 0 0 0;
 	color: #bdbdbd;
 }
 
+// Área dos canais (lado direito)
 ion-buttons {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	gap: 16px;
 	margin-top: 8px;
-  width: 100%;
+	justify-content: flex-end; // Alinha à direita
+	width: auto;
 }
 
 ion-buttons h3 {
-	font-size: 1.1rem;
+	font-size: 1rem; // Título dos canais
 	font-weight: 600;
 	margin-right: 12px;
 	color: rgb(41, 85, 185);
@@ -55,32 +61,35 @@ ion-buttons h3 {
 }
 
 ion-button {
-	--background: #232526;
-	--color: #fff;
-	border-radius: 24px;
-	box-shadow: 0 2px 8px rgba(0,0,0,0.10);
-	font-size: 1rem;
+	--background: #232526; // Cor de fundo dos botões
+	--color: #fff; // Cor do texto dos botões
+	border-radius: 24px; // Bordas arredondadas
+	box-shadow: 0 2px 8px rgba(0,0,0,0.10); // Sombra dos botões
+	font-size: 0.8rem;
 	font-weight: 500;
 	transition: background 0.2s, transform 0.2s;
 	padding: 0 16px;
 }
 
+// Efeito hover nos botões
 ion-button:hover {
 	transform: translateY(-2px) scale(1.05);
 }
 
+// Cores dos ícones dos canais ao passar o mouse
 .linkedin:hover{
-  --color: rgb(41, 85, 185);
+	--color: rgb(41, 85, 185);
 }
 .github:hover{
-  --color: #171515;
+	--color: #171515;
 }
 .instagram:hover{
-  --color: #bc2a8d;
+	--color: #bc2a8d;
 }
 
+// Ícones dos canais
 ion-icon {
-	font-size: 1.3rem;
+	font-size: 1.1rem;
 	vertical-align: middle;
 	margin-right: 4px;
 }
